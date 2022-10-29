@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    border:1px black;
+}
+body {
+    background-color:rgb(160,160,254);
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+                     
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 6em;
+    font-family:'Press Start 2P' , cursive;
+    color:blue;
+    Text-shadow: 7px 4px 4px black; 
+
+}
+h2{
+    text-align:center;
+    font-size:5em;
+    font-family:'Press Start 2P' , cursive;
+    color:red;
+    Text-shadow: 7px 4px 4px black; 
+}
+h3{
+    text-align:center;
+    font-size:5em;
+    font-family:'Press Start 2P' , cursive;
+    color:green;
+    Text-shadow: 7px 4px 4px black; 
+
+}
+
+.row1{
+display:inline-block;
+display: flex;
+justify-content: center;
+}
+
+.row2{
+    display:inline-block;
+    display: flex;
+    justify-content: center;
+    }
+
+.row3{
+        display:inline-block;
+        display: flex;
+        justify-content: center;
+        }
+ .boxes{
+            height:175px;
+            width:175px;
+            box-align:center;
+            margin: 12px;
+            margin-top:12px;
+        }
+#cloud{
+    height:200px;
+    width:200px;
+    position:absolute;
+    bottom:550px;
+    right: 1000px;
+}
+#cloud2{
+    height:200px;
+    width:200px;
+    position:absolute;
+    bottom:550px;
+    left: 1000px;
+    transform: scaleX(-1);
+   
+}
+.container{
+    display:flex;
+    min-height: 100vh;
+    flex-direction:column;
+    justify-content:space-between;
+}
+section{
+    min-height: 60vh;
+    flex-grow:5;
+}
+
+header, footer{
+    flex-grow:1;
+}
+
+@media(min-width:600px){
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section{
+        max-width: 100%
+    }
+
+    header, footer{
+        width:100%
+    }
+}
