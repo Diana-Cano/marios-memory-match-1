@@ -37,31 +37,27 @@ h3{
     Text-shadow: 7px 4px 4px black; 
 
 }
-
-.row1{
-display:inline-block;
-display: flex;
-justify-content: center;
+section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.game-grid{
+    display:flex;
+    flex-wrap:wrap;  
+    width:600px;
+    height:400px;
+   
+    justify-content:center;
+}
+img {
+    height:120px;
+    width:120px;
+    box-align:center;
+    margin:12px;
+    margin-top:12px;
 }
 
-.row2{
-    display:inline-block;
-    display: flex;
-    justify-content: center;
-    }
-
-.row3{
-        display:inline-block;
-        display: flex;
-        justify-content: center;
-        }
- .boxes{
-            height:175px;
-            width:175px;
-            box-align:center;
-            margin: 12px;
-            margin-top:12px;
-        }
 #cloud{
     height:200px;
     width:200px;
