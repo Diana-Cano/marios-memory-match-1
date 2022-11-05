@@ -27,7 +27,11 @@ const countDown = setInterval(()=>{
     }
     if(timeSecond=== 0 ){
         clearInterval(countDown);
-        console.log('you lose')
+    const youLose = document.createElement('img');
+    youLose.setAttribute('id','youLose')
+    youLose.src= './assets/gameover.png';
+    document.body.appendChild(youLose)
+    remove()
     }
 }, 1000)
   
@@ -48,6 +52,7 @@ cards.forEach(function (c , i) {
      var card = document.createElement('img')
      card.setAttribute('class' , 'character')
      card.setAttribute('src','./assets/frontface.png')
+     card.setAttribute('id', 'cardRemove')
      card.setAttribute('data-id', i)
      card.addEventListener('click', flipCard)
      grid.appendChild(card)
@@ -76,12 +81,14 @@ function remove(){
   let cloud1 = document.getElementById('cloud')
   let cloud2 =  document.getElementById('cloud2')
   let btn = document.getElementById('start-btn')
+  let questionCard = document.getElementById('cardRemove')
   title.remove()
   title2.remove()
   title3.remove()
   cloud1.remove()
   cloud2.remove()
   btn.remove()
+  questionCard.remove()
 }
 
 
