@@ -11,20 +11,21 @@
 <body>
     <div class = 'contatiner'>
          <header>
-        <h2>Super</h2>
-        <h1>Memory</h1>
-        <h3>Match!</h3>
+        <h2 id = 'super'>Super</h2>
+        <h1 id = 'memory'>Memory</h1>
+        <h3 id = 'match'>Match!</h3>
         <img id='cloud'src="assets/clouds.png" alt="clouds">
         <img id='cloud2'src="assets/clouds.png" alt="clouds">
     </header>
-        <button type="button" id="start-btn">Start!</button>
+        <button type="button" id="start-btn" onclick="timer()">Start!</button>
+        <p id = 'countdown'></p>
     <section id="main">
         <div class="game-grid">
             
         </div>
     </section>
-        <aside>Aside</aside>
-        <footer>footer</footer>
+        <aside></aside>
+        <footer></footer>
     </div>
         <script src="main.js"></script>
     </body>
