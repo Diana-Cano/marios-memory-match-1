@@ -12,9 +12,13 @@ const cards = [
     {name:'flower',  img:'./assets/flower.png'},
     {name:'ghost',  img:'./assets/ghost.png'},
 ]
+const timeH = document.getElementById('countdown');
+let started = false
+let startBtn = document.getElementById('start-btn')
+startBtn.addEventListener('click',timer)
 //create a timer using button in html 
 function timer(){
-const timeH = document.getElementById('countdown');
+started = true
 let timeSecond = 10;
 
 timeH.innerHTML = `${timeSecond}`;
@@ -63,6 +67,9 @@ cards.forEach(function (c , i) {
 //append to grid 
 //flip card function that should be imcluded in the for loop ; once created add an even listener to card in create grid 
 function flipCard(){
+    if (!started){
+      return
+    }
     var cardId = this.getAttribute('data-id')
     cardsChosen.push(cards[cardId].name)
     cardsImgId.push(cardId)
@@ -81,14 +88,18 @@ function remove(){
   let cloud1 = document.getElementById('cloud')
   let cloud2 =  document.getElementById('cloud2')
   let btn = document.getElementById('start-btn')
-  let questionCard = document.getElementById('cardRemove')
+  let questionCards = document.querySelectorAll('#cardRemove')
+  questionCards.forEach(function(card){
+     card.remove()
+  })
   title.remove()
   title2.remove()
   title3.remove()
   cloud1.remove()
   cloud2.remove()
   btn.remove()
-  questionCard.remove()
+  timeH.remove()
+  
 }
 
 
@@ -115,6 +126,7 @@ function checkForMatch(){
     img.setAttribute('id','youWin')
     img.src= './assets/youwin.png';
     document.body.appendChild(img)
+    started = false
     
   }
   cardsChosen = []
