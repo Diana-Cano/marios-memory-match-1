@@ -22,7 +22,6 @@ started = true
 let timeSecond = 25;
 
 timeH.innerHTML = `${timeSecond}`;
-
 const countDown = setInterval(()=>{
     timeSecond --
     timeH.innerHTML = `${timeSecond}`;

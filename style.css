@@ -72,14 +72,14 @@ img {
     height:200px;
     width:200px;
     position:absolute;
-    bottom:550px;
+    bottom:600px;
     right: 1000px;
 }
 #cloud2{
     height:200px;
     width:200px;
     position:absolute;
-    bottom:550px;
+    bottom:600px;
     left: 1000px;
     transform: scaleX(-1);
    
@@ -130,6 +130,7 @@ header, footer{
     width:800px;
     position:relative;
     bottom:350px;
+    justify-content:center;
     animation: blink 1s;
     animation-iteration-count: infinite;
 }
@@ -137,7 +138,9 @@ header, footer{
     height:700px;
     width:700px;
     position:relative;
-    bottom:400px;
+    justify-content:center;
+    bottom:500px;
+    left:100px;
     animation:blink 1s;
     animation-iteration-count: infinite;
 }
