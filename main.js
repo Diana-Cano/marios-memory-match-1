@@ -19,7 +19,7 @@ startBtn.addEventListener('click',timer)
 //create a timer using button in html 
 function timer(){
 started = true
-let timeSecond = 10;
+let timeSecond = 25;
 
 timeH.innerHTML = `${timeSecond}`;
 
