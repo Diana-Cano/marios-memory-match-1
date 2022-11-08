@@ -11,3 +11,11 @@ Orignially I had created all the cards in the html after looking at it I noticed
 how to play
 users click start button. timer begins and you have twenty five seconds to find all the matches or you lose. What is behind the cards is only known until you start makung clicks. When you win a banner will appear and the same thing will happen if you run out of time and lose.
 
+
+
+bugs I would have fixed if I had more time / things to add:
+-when playing the game if you go to fast I find that there is some kind of lag. I think it might have something to do with the set time out in the flip card function 
+-I would have added some kind of point system
+-play again button at the end 
+-found a better game over image for when you loose, I dont think it is as visually appealing as when you win 
+- added audio for when you find a match or when clicking the start button, orginally I had planned an audio of marrio saying his classic lets a go catch phrase
