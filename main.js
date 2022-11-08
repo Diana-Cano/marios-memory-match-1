@@ -2,7 +2,7 @@ const cards = [
     {name:'mushroom' , img:'./assets/mushroom.png'},
     {name:'meanMush' , img:'./assets/meanmush.png'},
     {name:'egg' , img:'./assets/egg.png'},
-    {name:'star' , img:'./assets/stars.png'},
+    {name:'star' , img:'./assets/stars.png' },
     {name:'flower',  img:'./assets/flower.png'},
     {name:'ghost',  img:'./assets/ghost.png'},
     {name:'mushroom' , img:'./assets/mushroom.png'},
