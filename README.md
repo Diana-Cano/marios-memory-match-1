@@ -1,4 +1,17 @@
 # marios-memory-match-1
+
+
+
+
+https://user-images.githubusercontent.com/109752714/233186787-d1177585-c97e-4e2d-a533-078ab7f259cd.mov
+
+
+
+
+
+
+
+
 index.html 
 The index html conisits of three different headers that make up the title, this was done for design purposes, I wanted each word to have a different color for the Super Mario Brothers aesthetic and the only way I could think to do this was through creating different header tags for each word in the title. Two image tags are also imcluded in the header for look purposes. Since the images went with the title I decided to include them im the header. There is also a section that contais a div that holds all the cards added in through java script. After that there is two more tags being the aside amd the footer. There is nothing in these tags however I included them in attempt to follow the 'holy grail layout' in order to make it compatiable with a mobile view along with a computer view. All of the tage previously mentioned are wrapped in a div called container inside the body of course. 
 
